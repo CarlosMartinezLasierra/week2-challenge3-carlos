@@ -1,12 +1,10 @@
-export updateValueTable;
-export valueTable;
+export const updateValueTable, =>{
 const valueTable = document.getElementsByClassName("valueTable")[0];
 const incrementButton = document.getElementsByClassName("increment")[0];
 const decrementButton = document.getElementsByClassName("decrement")[0];
 const resetButton = document.getElementsByClassName("reset")[0];
-
+};
 let value = 0;
-
 const updateValueTable = () => {
   if (value >= 25) {
     value = 25;
