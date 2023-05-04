@@ -1,7 +1,9 @@
-const valueTable = document.getElementsByClassName('valueTable')[0];
-const incrementButton= document.getElementsByClassName('increment')[0];
-const decrementButton = document.getElementsByClassName('decrement')[0];
-const resetButton = document.getElementsByClassName('reset')[0];
+export updateValueTable;
+export valueTable;
+const valueTable = document.getElementsByClassName("valueTable")[0];
+const incrementButton = document.getElementsByClassName("increment")[0];
+const decrementButton = document.getElementsByClassName("decrement")[0];
+const resetButton = document.getElementsByClassName("reset")[0];
 
 let value = 0;
 
@@ -16,21 +18,21 @@ const updateValueTable = () => {
     incrementButton.disabled = false;
     decrementButton.disabled = false;
   }
-  
-  valueTable.textContent = value;
-}
 
-incrementButton.addEventListener('click', () => {
+  valueTable.textContent = value;
+};
+
+incrementButton.addEventListener("click", () => {
   value++;
   updateValueTable();
 });
 
-decrementButton.addEventListener('click', () => {
+decrementButton.addEventListener("click", () => {
   value--;
   updateValueTable();
 });
 
-resetButton.addEventListener('click', () => {
+resetButton.addEventListener("click", () => {
   value = 0;
   updateValueTable();
   decrementButton.disabled = true;
