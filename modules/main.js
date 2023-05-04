@@ -1,3 +1,5 @@
+export updateValueTable;
+export valueTable;
 const valueTable = document.getElementsByClassName("valueTable")[0];
 const incrementButton = document.getElementsByClassName("increment")[0];
 const decrementButton = document.getElementsByClassName("decrement")[0];
